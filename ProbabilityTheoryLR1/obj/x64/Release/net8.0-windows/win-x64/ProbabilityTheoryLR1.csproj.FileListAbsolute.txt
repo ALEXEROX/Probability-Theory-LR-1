@@ -1,0 +1,29 @@
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.exe
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.deps.json
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.runtimeconfig.json
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.dll
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.pdb
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\x64\Release\net8.0-windows\win-x64\XeroMath.dll
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\x64\Release\net8.0-windows\win-x64\XeroMath.pdb
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.csproj.AssemblyReference.cache
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.Form1.resources
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.Properties.Resources.resources
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.csproj.GenerateResource.cache
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.AssemblyInfoInputs.cache
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.AssemblyInfo.cs
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.csproj.CoreCompileInputs.cache
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.csproj.CopyComplete
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.dll
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\refint\ProbabilityTheoryLR1.dll
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.pdb
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.genruntimeconfig.cache
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ref\ProbabilityTheoryLR1.dll
+C:\Users\ermak\YandexDisk\VSTU\2 kurs\2 semestr\Teoriya veroyatnostei matematicheskaya statistika i sluchaynyie sobyitiya\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.csproj.AssemblyReference.cache
+C:\Users\ermak\YandexDisk\VSTU\2 kurs\2 semestr\Teoriya veroyatnostei matematicheskaya statistika i sluchaynyie sobyitiya\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.Form1.resources
+C:\Users\ermak\YandexDisk\VSTU\2 kurs\2 semestr\Teoriya veroyatnostei matematicheskaya statistika i sluchaynyie sobyitiya\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.Properties.Resources.resources
+C:\Users\ermak\YandexDisk\VSTU\2 kurs\2 semestr\Teoriya veroyatnostei matematicheskaya statistika i sluchaynyie sobyitiya\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.csproj.GenerateResource.cache
+C:\Users\ermak\YandexDisk\VSTU\2 kurs\2 semestr\Teoriya veroyatnostei matematicheskaya statistika i sluchaynyie sobyitiya\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ermak\YandexDisk\VSTU\2 kurs\2 semestr\Teoriya veroyatnostei matematicheskaya statistika i sluchaynyie sobyitiya\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.dll
+C:\Users\ermak\YandexDisk\VSTU\2 kurs\2 semestr\Teoriya veroyatnostei matematicheskaya statistika i sluchaynyie sobyitiya\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\refint\ProbabilityTheoryLR1.dll
+C:\Users\ermak\YandexDisk\VSTU\2 kurs\2 semestr\Teoriya veroyatnostei matematicheskaya statistika i sluchaynyie sobyitiya\ProbabilityTheoryLR1\ProbabilityTheoryLR1\obj\x64\Release\net8.0-windows\win-x64\ProbabilityTheoryLR1.pdb

@@ -1,0 +1,7 @@
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\Release\net8.0-windows\publish\win-x64\ProbabilityTheoryLR1.exe
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\Release\net8.0-windows\publish\win-x64\ProbabilityTheoryLR1.dll
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\Release\net8.0-windows\publish\win-x64\ProbabilityTheoryLR1.deps.json
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\Release\net8.0-windows\publish\win-x64\ProbabilityTheoryLR1.runtimeconfig.json
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\Release\net8.0-windows\publish\win-x64\ProbabilityTheoryLR1.pdb
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\Release\net8.0-windows\publish\win-x64\XeroMath.dll
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\Release\net8.0-windows\publish\win-x64\XeroMath.pdb

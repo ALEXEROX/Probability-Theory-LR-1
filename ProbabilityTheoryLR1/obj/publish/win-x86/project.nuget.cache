@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Hey9yBG6ghbgfpIMa5GxO5CzsmIhGCYCsZ8AP8UOO29idC5B1lcXP2SuGP+ECvYhTLHQq6rTl+53ipD8TSNZoQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ermak\\source\\repos\\ProbabilityTheoryLR1\\ProbabilityTheoryLR1\\ProbabilityTheoryLR1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ermak\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.1\\microsoft.net.illink.tasks.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

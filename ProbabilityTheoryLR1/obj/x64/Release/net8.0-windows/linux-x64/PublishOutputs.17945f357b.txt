@@ -1,0 +1,3 @@
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\Release\net8.0-windows\publish\win-x64\ProbabilityTheoryLR1.pdb
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\Release\net8.0-windows\publish\win-x64\XeroMath.pdb
+C:\Users\ermak\source\repos\ProbabilityTheoryLR1\ProbabilityTheoryLR1\bin\Release\net8.0-windows\publish\win-x64\ProbabilityTheoryLR1
