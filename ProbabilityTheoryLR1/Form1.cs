@@ -1,70 +1,70 @@
-using System.Diagnostics; //Подключение библиотеки для запуска процессов (Process)
+using System.Diagnostics; //Podklyuchenie biblioteki dlya zapuska processov (Process)
 
 namespace ProbabilityTheoryLR1
 {
     public partial class Form1 : Form
     {
-        public float ready = 0; //Переменная, хранящая готовность вычислений
-        public XeroNumber a; //Большое число, хранящее результат
-        public Thread numeration; //Поток вычисления
+        public float ready = 0; //Peremennaya, hranyashaya gotovnost viychisleniy
+        public XeroNumber a; //Bolshoe chislo, hranyashee rezultat
+        public Thread numeration; //Potok viychisleniya
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        //Таймер, обновляющий полосу прогремма
+        //Taymer, obnovlyayushiy polosu progremma
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (ready < 1) //Если вычисление не завершено
+            if (ready < 1) //Esli viychislenie ne zaversheno
             {
-                ProgressBar.Value = (int)(ready * 100); //Даём полосе прогресса значение
-                Percentage.Text = (ready * 100).ToString() + "%"; //И записываем его процентный вариант
+                ProgressBar.Value = (int)(ready * 100); //Dayom polose progressa znachenie
+                Percentage.Text = (ready * 100).ToString() + "%"; //I zapisiyvaem ego procentniyy variant
             }
             else
             {
-                timer1.Stop(); //Останавливаем таймер
-                ProgressBar.Value = 100; //Заполняем полосу
-                Percentage.Text = "100%"; //Вычисления завершены
+                timer1.Stop(); //Ostanavlivaem taymer
+                ProgressBar.Value = 100; //Zapolnyaem polosu
+                Percentage.Text = "100%"; //Viychisleniya zaversheniy
 
-                if (a.Size < 1000) //Если число не слишком большое
-                    MessageBox.Show(a.ToString(), "Результат"); // Выводим его в окно сообщения
-                else //Иначе выводим предупреждение, что результат записан в results.txt
-                    MessageBox.Show("Из-за величины результата, он помещён только в results.txt", "Результат");
+                if (a.Size < 1000) //Esli chislo ne slishkom bolshoe
+                    MessageBox.Show(a.ToString(), "Rezultat"); // Viyvodim ego v okno soobsheniya
+                else //Inache viyvodim preduprezhdenie, chto rezultat zapisan v results.txt
+                    MessageBox.Show("Iz-za velichiniy rezultata, on pomeshyon tolko v results.txt", "Rezultat");
 
-                using (FileStream fs = new FileStream("results.txt", FileMode.OpenOrCreate)) //Открываем или создаём results.txt
-                using (StreamWriter sw = new StreamWriter(fs)) //Создаём процесс записи
+                using (FileStream fs = new FileStream("results.txt", FileMode.OpenOrCreate)) //Otkriyvaem ili sozdayom results.txt
+                using (StreamWriter sw = new StreamWriter(fs)) //Sozdayom process zapisi
                 {
-                    fs.Position = fs.Length == 0 ? 0 : fs.Length - 1; //Переносим курсор в конец файла
+                    fs.Position = fs.Length == 0 ? 0 : fs.Length - 1; //Perenosim kursor v konec fayla
 
-                    switch (ComboBox.SelectedIndex) //Смотрим на выбранный вариант комбинации и выводим в строку условия
+                    switch (ComboBox.SelectedIndex) //Smotrim na viybranniyy variant kombinacii i viyvodim v stroku usloviya
                     {
-                        case 0: //Сочетание без повторы
+                        case 0: //Sochetanie bez povtoriy
                             sw.WriteLine("C n=" + Number_n.Value.ToString() + " m=" + Number_m.Value.ToString());
                             break;
-                        case 1: //Размещение без повтора
+                        case 1: //Razmeshenie bez povtora
                             sw.WriteLine("A n=" + Number_n.Value.ToString() + " m=" + Number_m.Value.ToString());
                             break;
-                        case 2: //Размещение с повтором
+                        case 2: //Razmeshenie s povtorom
                             sw.WriteLine("~A n=" + Number_n.Value.ToString() + " m=" + Number_m.Value.ToString());
                             break;
                     }
-                    
-                    sw.WriteLine(a.ToString() + "\n"); //Выводим результат на новой строке и ещё один перенос строки
+
+                    sw.WriteLine(a.ToString() + "\n"); //Viyvodim rezultat na novoy stroke i eshyo odin perenos stroki
                 }
 
-                ProgressBar.Visible = Percentage.Visible = false; //Прячем полосу прогресса из процентное значение
-                Number_n.Enabled = Number_m.Enabled = ComboBox.Enabled = Button.Enabled = true; //Включаем выбор комбинации и чисел
+                ProgressBar.Visible = Percentage.Visible = false; //Pryachem polosu progressa iz procentnoe znachenie
+                Number_n.Enabled = Number_m.Enabled = ComboBox.Enabled = Button.Enabled = true; //Vklyuchaem viybor kombinacii i chisel
             }
         }
 
-        //Произошёл выбор комбинации
+        //Proizoshyol viybor kombinacii
         private void ComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //Выводим все элементы интерфейса, кроме полосы прогресса
+            //Viyvodim vse elementiy interfeysa, krome polosiy progressa
             Information.Visible = ClearResults.Visible = Label_n.Visible = Label_m.Visible = Number_n.Visible = Number_m.Visible = Button.Visible = true;
 
-            switch (ComboBox.SelectedIndex) //Смотрим на выбранный вариант комбинации и отображаем картинку с формулой
+            switch (ComboBox.SelectedIndex) //Smotrim na viybranniyy variant kombinacii i otobrazhaem kartinku s formuloy
             {
                 case 0:
                     PictureBox.Image = Properties.Resources.C;
@@ -78,78 +78,78 @@ namespace ProbabilityTheoryLR1
             }
         }
 
-        //Кнопка нажата
+        //Knopka nazhata
         private void Button_Click(object sender, EventArgs e)
         {
-            Percentage.Visible = ProgressBar.Visible = true; //Выводим полосу прогресса 
-            Number_n.Enabled = Number_m.Enabled = ComboBox.Enabled = Button.Enabled = false; //Блокируем выбор чисел и комбинаци
-            timer1.Start(); //Запускаем таймер
+            Percentage.Visible = ProgressBar.Visible = true; //Viyvodim polosu progressa 
+            Number_n.Enabled = Number_m.Enabled = ComboBox.Enabled = Button.Enabled = false; //Blokiruem viybor chisel i kombinaci
+            timer1.Start(); //Zapuskaem taymer
 
-            switch (ComboBox.SelectedIndex) //Смотрим на выбранный вариант комбинации и даём потоку вычисления функцию расчёта комбинации
+            switch (ComboBox.SelectedIndex) //Smotrim na viybranniyy variant kombinacii i dayom potoku viychisleniya funkciyu raschyota kombinacii
             {
-                case 0: //Сочетание без повтора
+                case 0: //Sochetanie bez povtora
                     numeration = new Thread(CWoR);
                     break;
-                case 1: //Размещение без повтора
+                case 1: //Razmeshenie bez povtora
                     numeration = new Thread(AWoR);
                     break;
-                case 2: //Размещение с повтором
+                case 2: //Razmeshenie s povtorom
                     numeration = new Thread(AWR);
                     break;
             }
 
-            numeration.Start(); //Запуск потока
+            numeration.Start(); //Zapusk potoka
         }
 
         private void CWoR()
         {
-            //Библиотченый метод расчёта сочетания без повтора
+            //Bibliotcheniyy metod raschyota sochetaniya bez povtora
             a = XeroNumber.CombinationWithoutRepeat((int)Number_n.Value, (int)Number_m.Value, ref ready);
         }
 
         private void AWoR()
         {
-            //Библиотченый метод расчёта размещения без повтора
+            //Bibliotcheniyy metod raschyota razmesheniya bez povtora
             a = XeroNumber.ArrangementWithoutRepeat((int)Number_n.Value, (int)Number_m.Value, ref ready);
         }
 
         private void AWR()
         {
-            //Библиотченый метод расчёта размещения с повтором
+            //Bibliotcheniyy metod raschyota razmesheniya s povtorom
             a = XeroNumber.ArrangementWithRepeat((int)Number_n.Value, (int)Number_m.Value, ref ready);
         }
 
-        //Значение числа n изменено
+        //Znachenie chisla n izmeneno
         private void Number_n_ValueChanged(object sender, EventArgs e)
         {
-            ErrorLabel.Visible = Number_n.Value > Number_m.Value; //Если n > m, выводим строку, указывающую на ошибку
-            Button.Enabled = Number_n.Value <= Number_m.Value; //Если n <= m, разблокируем кнопку
+            ErrorLabel.Visible = Number_n.Value > Number_m.Value; //Esli n > m, viyvodim stroku, ukaziyvayushuyu na oshibku
+            Button.Enabled = Number_n.Value <= Number_m.Value; //Esli n <= m, razblokiruem knopku
         }
 
-        //Значение числа m изменено
+        //Znachenie chisla m izmeneno
         private void Number_m_ValueChanged(object sender, EventArgs e)
         {
-            ErrorLabel.Visible = Number_n.Value > Number_m.Value; //Если n > m, выводим строку, указывающую на ошибку
-            Button.Enabled = Number_n.Value <= Number_m.Value; //Если n <= m, разблокируем кнопку
+            ErrorLabel.Visible = Number_n.Value > Number_m.Value; //Esli n > m, viyvodim stroku, ukaziyvayushuyu na oshibku
+            Button.Enabled = Number_n.Value <= Number_m.Value; //Esli n <= m, razblokiruem knopku
         }
 
-        //Кнопка "Очистить results.txt" нажата
+        //Knopka "Ochistit results.txt" nazhata
         private void ClearResults_Click(object sender, EventArgs e)
         {
-            using (FileStream fs = new FileStream("results.txt", FileMode.Create)) ;//Создаём results.txt Заново
+            using (FileStream fs = new FileStream("results.txt", FileMode.Create)) ;//Sozdayom results.txt Zanovo
         }
 
-        //Кнопка "Открыть results.txt" нажата
+        //Knopka "Otkriyt results.txt" nazhata
         private void OpenResults_Click(object sender, EventArgs e)
         {
-            using (FileStream fs = new FileStream("results.txt", FileMode.OpenOrCreate)) //Открываем или создаём results.txt
-                Process.Start("notepad.exe", "results.txt"); //Открываем его в блокноте
+            using (FileStream fs = new FileStream("results.txt", FileMode.OpenOrCreate)) //Otkriyvaem ili sozdayom results.txt
+                Process.Start("notepad.exe", "results.txt"); //Otkriyvaem ego v bloknote
         }
 
-        //Когда приложение готово закрыться
+        //Kogda prilozhenie gotovo zakriytsya
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Эта строка выключает приложение с завершением всех вычислений
+            //Eta stroka viyklyuchaet prilozhenie s zaversheniem vseh viychisleniy
             Environment.Exit(0);
         }
     }
